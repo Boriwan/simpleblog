@@ -8,4 +8,9 @@ class ArticleController extends Controller
     {
         return view('articles');
     }
+
+    public function show(Article $article)
+    {
+        return view('article', ['article' => $article]);
+    }
 }
